@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:blog": "npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engineerhead/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engineerhead/portfolio/issues"
+  },
+  "homepage": "https://github.com/engineerhead/portfolio#readme",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  }
+}

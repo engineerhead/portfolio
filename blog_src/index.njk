@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Umair's Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="container">
+        <a class="navigation-title" href="/">Umair's Blog</a>
+        <ul class="navigation-list float-right">
+          <li class="navigation-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">About</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="column column-25">
+          <aside>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Archives</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column column-75">
+          <main>
+            <h2>Blog Posts</h2>
+            {%- for post in collections.posts -%}
+              <div>
+                <h3>
+                  <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h3>
+                <p>{{ post.data.excerpt }}</p>
+                <p>
+                  <a href="{{ post.url }}">Read more</a>
+                </p>
+                <small>Published on {{ post.date }}</small>
+              </div>
+              <hr/>
+            {%- endfor -%}
+          </main>
+        </div>
+      </div>
+    </body>
+  </body>
+</html></div></body></html>

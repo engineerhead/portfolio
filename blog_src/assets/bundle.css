@@ -1,0 +1,25 @@
+.navigation {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.navigation-title {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navigation-list li a {
+    text-decoration: none;
+    color: #333;
+}
