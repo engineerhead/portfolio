@@ -1,3 +1,2 @@
 [build]
-    publish = "blog"
     command = "npm run build:blog"
