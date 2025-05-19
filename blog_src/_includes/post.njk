@@ -30,43 +30,47 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="column column-25">
-          <aside style="text-align: center;">
-            <img src="/assets/umair.png" alt="Umair's Profile" style="border-radius:50%; margin-bottom: 1em;">
-            <p>
-              Umair Bussi is a software engineer with a passion for building scalable web applications. He loves to share his
-              knowledge and experiences through writing.
-            </p>
-            <div>
-              <a href="https://github.com/engineerhead" target="_blank" rel="noopener" title="GitHub" style="margin: 0 0.5em;">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
-                  alt="GitHub"
-                  style="width:24px; filter: invert(0.2);">
-              </a>
-              <a href="https://twitter.com/engineered_head" target="_blank" rel="noopener" title="Twitter" style="margin: 0 0.5em;">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg"
-                  alt="Twitter"
-                  style="width:24px; filter: invert(0.2);">
-              </a>
-              <a
-                href="https://www.linkedin.com/in/umair-hameed-788924254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank"
-                rel="noopener"
-                title="LinkedIn"
-                style="margin: 0 0.5em;">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
-                  alt="LinkedIn"
-                  style="width:24px; filter: invert(0.2);">
-              </a>
-            </div>
-          </aside>
-        </div>
-        <div class="column column-75">
+        <div class="column">
           <main>
             <h1>{{ title }}</h1>
+            <div class="row" style="align-items: center; border: 1px solid; padding: 1em;">
+              <div class="column column-75">
+                <aside>
+                  <p>
+                    Umair Bussi is a software engineer with a passion for building scalable web applications. He loves to share his
+                    knowledge and experiences through writing.
+                  </p>
+                  <div>
+                    <a href="https://github.com/engineerhead" target="_blank" rel="noopener" title="GitHub" style="margin: 0 0.5em;">
+                      <img
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
+                        alt="GitHub"
+                        style="width:24px; filter: invert(0.2);">
+                    </a>
+                    <a href="https://twitter.com/engineered_head" target="_blank" rel="noopener" title="Twitter" style="margin: 0 0.5em;">
+                      <img
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg"
+                        alt="Twitter"
+                        style="width:24px; filter: invert(0.2);">
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/umair-hameed-788924254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener"
+                      title="LinkedIn"
+                      style="margin: 0 0.5em;">
+                      <img
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                        alt="LinkedIn"
+                        style="width:24px; filter: invert(0.2);">
+                    </a>
+                  </div>
+                </aside>
+              </div>
+              <div class="column column-25" style="text-align: right;">
+                <img src="/assets/umair.png" alt="Umair's Profile" style="max-width: 120px; border-radius: 8px;">
+              </div>
+            </div>
             <article>{{ content | safe }}</article>
           </main>
         </div>
