@@ -1,8 +1,76 @@
 <html>
-  <head><title>{{ title }}</title></head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>{{ title }} - Umair Bussi's Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"/>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/bundle.css"/>
+  </head>
   <body>
-    <h1>{{ title }}</h1>
-    <article>{{ content | safe }}</article>
+    <nav class="navigation">
+      <div class="container">
+        <a class="navigation-title" href="/">Umair's Blog</a>
+        <ul class="navigation-list float-right">
+          <li class="navigation-item">
+            <a href="https://umairbussi.com">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="https://umairbussi.com/#experience">About</a>
+          </li>
+          <li class="navigation-item">
+            <a href="https://umairbussi.com/#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="column column-25">
+          <aside style="text-align: center;">
+            <img src="/assets/umair.png" alt="Umair's Profile" style="border-radius:50%; margin-bottom: 1em;">
+            <p>
+              Umair Bussi is a software engineer with a passion for building scalable web applications. He loves to share his
+              knowledge and experiences through writing.
+            </p>
+            <div>
+              <a href="https://github.com/engineerhead" target="_blank" rel="noopener" title="GitHub" style="margin: 0 0.5em;">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
+                  alt="GitHub"
+                  style="width:24px; filter: invert(0.2);">
+              </a>
+              <a href="https://twitter.com/engineered_head" target="_blank" rel="noopener" title="Twitter" style="margin: 0 0.5em;">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg"
+                  alt="Twitter"
+                  style="width:24px; filter: invert(0.2);">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/umair-hameed-788924254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener"
+                title="LinkedIn"
+                style="margin: 0 0.5em;">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  style="width:24px; filter: invert(0.2);">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="column column-75">
+          <main>
+            <h1>{{ title }}</h1>
+            <article>{{ content | safe }}</article>
+          </main>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
