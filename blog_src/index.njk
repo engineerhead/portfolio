@@ -29,10 +29,9 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
-        <div class="column">
-          <aside style="text-align: center;">
-            <img src="/assets/umair.png" alt="Umair's Profile" style="border-radius:50%; margin-bottom: 1em;">
+      <div class="row" style="align-items: center; border: 1px solid; padding: 1em;">
+        <div class="column column-75">
+          <aside>
             <p>
               Umair Bussi is a software engineer with a passion for building scalable web applications. He loves to share his
               knowledge and experiences through writing.
@@ -64,26 +63,29 @@
             </div>
           </aside>
         </div>
-        <div class="row">
-          <div class="column">
-            <main>
-              {%- for post in collections.posts -%}
-                <div>
-                  <h3>
-                    <a href="{{ post.url }}">{{ post.data.title }}</a>
-                  </h3>
-                  <p>{{ post.data.excerpt }}</p>
-                  <p>
-                    <a href="{{ post.url }}">Read more</a>
-                  </p>
-                  <small>Published on {{ post.date }}</small>
-                </div>
-                <hr/>
-              {%- endfor -%}
-            </main>
-          </div>
+        <div class="column column-25" style="text-align: right;">
+          <img src="/assets/umair.png" alt="Umair's Profile" style="max-width: 120px; border-radius: 8px;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <main>
+            {%- for post in collections.posts -%}
+              <div>
+                <h3>
+                  <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h3>
+                <p>{{ post.data.excerpt }}</p>
+                <p>
+                  <a href="{{ post.url }}">Read more</a>
+                </p>
+                <small>Published on {{ post.date }}</small>
+              </div>
+              <hr/>
+            {%- endfor -%}
+          </main>
         </div>
       </div>
     </div>
   </body>
-</html>
+</html></div></body></html>
